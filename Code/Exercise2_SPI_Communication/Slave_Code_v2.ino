@@ -1,25 +1,27 @@
 #include <SPI.h>
-volatile char receivedData;
+
+char receivedData;
+const int led1 = 8;
+const int led2 = 9;
 
 void setup() {
-  pinMode(10, INPUT);
+  pinMode(SS, INPUT);
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
   SPCR |= _BV(SPE);
-  SPI.attachInterrupt();
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
 }
 
 void loop() {
-
+  if (SPSR & (1 << SPIF)) {
+    receivedData = SPDR;
+    if (receivedData == 'C') {
+      digitalWrite(led1, !digitalRead(led1));
+      digitalWrite(led2, !digitalRead(led2));
+    } 
+    else if (receivedData == 'D') {
+      digitalWrite(led1, LOW);
+      digitalWrite(led2, LOW);
+    }
+    SPSR &= ~(1 << SPIF);
+  }
 }
-
-ISR(SPI_STC_vect) {  
-  receivedData = SPDR;  
-  if (receivedData == 'C') {  
-    digitalWrite(8, !digitalRead(8));  
-    digitalWrite(9, !digitalRead(9));  
-  } else if (receivedData == 'D') {  
-    digitalWrite(8, LOW);  
-    digitalWrite(9, LOW);  
-  }  
-}  
