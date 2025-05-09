@@ -28,7 +28,15 @@ This repository contains the code and documentation for two embedded systems exe
   [Download Video](Videos/Traffic_Lights_Demo.mp4)  
 
 - **SPI Communication Demo**:  
-  [Download Video](Videos/SPI_Communication_Demo.mp4)  
+  [Download Video](Videos/SPI_Communication_Demo.mp4)
+
+  ## 🎥 Videos  
+
+### Traffic Light Demo  
+[![Traffic Lights Preview](Thumbnails/traffic_thumb.png)](Videos/Traffic_Lights_Demo.mp4)  
+
+### SPI Communication Demo  
+[![SPI Communication Preview](Thumbnails/spi_thumb.png)](Videos/SPI_Communication_Demo.mp4)  
 
 ## 🔧 Setup Instructions  
 1. **Software**:  
