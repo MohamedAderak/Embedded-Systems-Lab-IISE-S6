@@ -1,2 +1,6 @@
-# Embedded-Systems-Lab-IISE-S6
-🔌 Simulation of traffic light control and SPI communication using Arduino Uno and Proteus. Includes code, schematics, and oscilloscope analysis..
+# Embedded Systems Lab - IISE S6  
+This repository contains the code and documentation for two embedded systems exercises:  
+1. **Traffic Light Control System**  
+2. **SPI Communication between Master and Slave Devices**  
+
+## 📁 Repository Structure  
