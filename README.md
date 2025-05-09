@@ -21,7 +21,14 @@ This repository contains the code and documentation for two embedded systems exe
   - Master sends 'A' to Slave 1 and 'B' to Slave 2.  
   - LEDs blink based on potentiometer input (Ve > 3V).  
 - **Signal Analysis**:  
-  ![SPI Signals](Screenshots/SPI_Signals_Oscilloscope.png)  
+  ![SPI Signals](Screenshots/SPI_Signals_Oscilloscope.png)
+
+  ## 🎥 Videos  
+- **Traffic Light Demo**:  
+  [Download Video](Videos/Traffic_Lights_Demo.mp4)  
+
+- **SPI Communication Demo**:  
+  [Download Video](Videos/SPI_Communication_Demo.mp4)  
 
 ## 🔧 Setup Instructions  
 1. **Software**:  
